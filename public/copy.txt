@@ -1,0 +1,60 @@
+<header>
+            <div class="social_media_banner">
+                <!--
+                <button >twitter</button><button>facebook</button><button>youtube</button><button>instagram</button><a href="">+503 2247-3400</a><a href="">info@mpservice.com.sv</a><a href="">Acceso Clientes</a>
+                -->
+                <ul class="links">
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">+503 2247-3400</a></li>
+                    <li><a href="">info@mpservice.com.sv</a></li>
+                    <li><a href="">Acceso clientes</a></li>
+                </ul>
+            </div>
+        </header>
+        
+
+        <div class="container">
+           
+           <!--
+           <Button class="home">INICIO</Button><Button class="about_us">NOSOTROS</a></Button><button class="products">PRODUCTOS</button><button class="proyects">PROYECTOS</button><button class="renewable">ENERGIA RENOVALBLES</button><button class="brands">MARCAS</button><button class="contacts">CONTACTOS</button>
+           -->
+           <ul class="menu">
+            <li><img src="./images/logo.png" alt="Logo" class="logo"></li>
+            <li><img src="./images/lead.png" alt="Logo" class=""></li><!--
+            <li class="home">INICIO</li>
+            <li class="about_us">NOSOTROS</li>
+            <li class="products">PRODUCTOS</li>
+            <li class="services">SERVICIOS</li>
+            <li class="proyects">PROYECTOS</li>
+            <li class="renewable">ENERGIA RENOVABLE</li>
+            <li class="brands">MARCAS</li>
+            <li class="contacts">CONTACTOS</li>-->
+            <li class="reliable_page">
+                    <a href=""><img src="./images/control.png" alt="reliable_controls" class="reliable_img"></a></li>
+            <li class="leed_image">
+                <div class="leed">
+                    <a href=""><img src="./images/hearth.png" alt="leed_earth"></a></li>
+                </div>
+        
+        
+        </ul>
+    
+        </div>
+        <div class="container">
+            <a href="index.html">INICIO</a>
+            <a href="about_us.html">NOSOTROS</a>
+            <a href="">PRODUCTOS</a>
+            <a href="">SERVICIOS</a>
+            <a href="">PROYECTOS</a>
+            <a href="">ENERGIA RENOVABLE</a>
+            <a href="">MARCAS</a>
+            <a href="">CONTACTOS</a>
+        </div>
+    
+        <footer class="footer">
+            <img src="./images/principal.png" alt="main_image" class="main_image">
+            <p>Copyright © Derechos Reservados. Diseñado Por: .<a href="">MP Service S.A de C.V</a></p>
+        </footer>
