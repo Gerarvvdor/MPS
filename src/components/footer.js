@@ -3,7 +3,7 @@ import HomePage from '../paginas/Inicio';
 
 const Footer = () => {
     return(
-        <p>Copyright © Derechos Reservados. Diseñado Por: .<a href={HomePage}>MP Service S.A de C.V</a></p>
+        <p>Copyright © Derechos Reservados. Diseñado Por: MP Service S.A de C.V</p>
     );
 }
 

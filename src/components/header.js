@@ -16,8 +16,7 @@ const Header = () =>{
           <Link>Youtube</Link>   
           <Link>Instagram</Link>   
           <Link>+503 2247-3400</Link>    
-          <Link>info@mpservice.com.sv</Link>   
-          <Link>Acceso cliente</Link>   
+          <Link>info@mpservice.com.sv</Link>    
       </nav>
 
       <div>

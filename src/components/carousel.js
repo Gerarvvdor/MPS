@@ -10,16 +10,16 @@ const images = [
     {foto3},
   ];
   
-  const CarouselSlide = () => {
-    return (
-      <Carousel>
-        {images.map((image, index) => (
-          <Carousel.Item key={index}>
-            <img src={image} alt={`Slide ${index}`} />
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    );
-  };
+const CarouselSlide = () => {
+  return (
+    <Carousel>
+      {images.map((image, index) => (
+        <Carousel.Item key={index}>
+          <img src={image} alt={`Slide ${index}`} />
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  );
+};
   
-  export default CarouselSlide;
+export default CarouselSlide;
