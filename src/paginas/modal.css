@@ -1,0 +1,52 @@
+.modalBackground{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modalContainer{
+    width:max-content;
+    height: fit-content;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.modalContainer .header {
+    display: flex;
+    justify-content: center;
+}
+.modalContainer .header img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modalContainer .body{
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-justify:distribute;
+    padding: 20px;
+    font-size: medium;
+}
+
+.modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
