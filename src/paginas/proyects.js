@@ -3,6 +3,7 @@ import React from "react";
 const Proyects = () => {
     return (
         <>
+        <h1>PROYECTOS</h1>
         </>
 
     );

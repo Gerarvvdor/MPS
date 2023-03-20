@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
 import Mantenimiento from "./../images/mantenimento.png";
 import Reparaciones from "./../images/s7.png";
 import Auditorias from "./../images/auditoria.png";

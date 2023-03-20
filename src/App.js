@@ -1,7 +1,9 @@
 import React from "react";
+import { useState } from "react";
 //components//
 import Header from "./../src/components/header";
 import Footer from "./components/footer";
+
 //reactDOM//
 import {Routes, Route} from "react-router-dom";
 //pages//
@@ -15,6 +17,7 @@ import Brands from "./paginas/brands";
 import Contacts from "./paginas/contacts";
 
 const App = () => {
+
     return (
         <>
             <div className="contenedor">
@@ -26,7 +29,7 @@ const App = () => {
                         <Routes>
                         <Route path="/" element={<HomePage/>}/>
                         <Route path="/aboutUs" element={<AboutUs/>}/>
-                        <Route path="/products" element={<Products/>}/>
+                        <Route path="/products/*" element={<Products/>}/>
                         <Route path="/services" element={<Services/>}/>
                         <Route path="/proyects" element={<Proyects/>}/>
                         <Route path="/renewable" element={<Renewable/>}/>
