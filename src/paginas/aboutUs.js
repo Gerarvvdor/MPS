@@ -31,8 +31,7 @@ const aboutUs = () => {
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <img src={header} alt="modalHeaderImage" ></img>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <img src={header} alt="modalHeaderImage" class="img-fluid"></img>
                             </div>
                             <div class="modal-body">
                                 <p>MP SERVICE surge principalmente como una empresa dedicada al servicio de mantenimiento en edificios e industria, específicamente en equipos de aire acondicionado; así como al suministro e instalación de estos sistemas. En su evolución y con una filosofía orientada a disminuir los gastos operativos de las empresas a las que damos servicio, damos un salto tecnológico importante al ofrecer a nuestros clientes sistemas de automatización y control de los equipos de aire acondicionado, iluminación, sistemas de bombeo, calderas etc. con tecnología de última generación, con personal calificado y entrenado en Estados Unidos y Canadá.</p>

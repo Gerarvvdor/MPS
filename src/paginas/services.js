@@ -8,7 +8,7 @@ return (
     <>
         <div class="container">
             <h1>SERVICIOS</h1>
-                <div>
+                <div class="container">
                     <div class="row">
                         <div class="col">
                             <div class="card text-center mb-3">
@@ -19,13 +19,12 @@ return (
                                     </div>
                             </div>
                         </div>
-
                         <div class="col">                            
                             <div class="card text-center mb-3">
                                 <h3>Reparaciones</h3>
                                 <img src={Reparaciones} class="card-img-top" alt="reparaciones"></img>
                                     <div class="card-body">
-                                        <p>Tenemos una amplia experiencia en la reparación de equipos electromecánicos, entre los que figuran Chillers, Air Handlers, Bombas de agua, etc.</p>
+                                        <p class="card-text">Tenemos una amplia experiencia en la reparación de equipos electromecánicos, entre los que figuran Chillers, Air Handlers, Bombas de agua, etc.</p>
                                     </div>
                             </div>
                         </div>

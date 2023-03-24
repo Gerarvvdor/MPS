@@ -45,67 +45,67 @@ const Products = () => {
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img src={agua} alt=""></img>
-                                <h3>CHILLER ENFIRADO POR AGUA</h3>   
+                                <img class="img-fluid" src={agua} alt=""></img>
+                                <h5>CHILLER ENFIRADO POR AGUA</h5>   
                             </div>
                             <div class="col">
-                                <img src={aire} alt=""></img>
+                                <img class="img-fluid" src={aire} alt=""></img>
                                 <h3>CHILLER ENFIRADO POR AIRE</h3> 
                             </div>
                             <div class="col">
-                                <img src={aireAcondicionado} alt=""></img>
+                                <img class="img-fluid" src={aireAcondicionado} alt=""></img>
                                 <h3>AIRE ACONDICIONADO RESIDENCIAL Y COMERCIAL</h3>
                             </div>
                         </div>
                         <div class="row">   
                             <div class="col">
-                                <img src={vrf} alt=""></img>
+                                <img class="img-fluid" src={vrf} alt=""></img>
                                 <h3>AIRE ACONDICIONADO SISTEMA DE REFRIGETANDE DE FLUJO VARIABLE (VRF)</h3>
                             </div>
                             <div class="col">
-                                <img src={unidadesCentrales} alt=""></img>
+                                <img class="img-fluid" src={unidadesCentrales} alt=""></img>
                                 <h3>UNIDADES CENTRALES</h3>
                             </div>
                             <div class="col">
-                                <img src={fan} alt=""></img>
+                                <img class="img-fluid" src={fan} alt=""></img>
                                 <h3>FAN COIL DE AGUA FRIA</h3>
                             </div>
                         </div>
                         <div class="row">    
                             <div class="col">
-                                <img src={autoControl} alt=""></img>
+                                <img class="img-fluid" src={autoControl} alt=""></img>
                                 <h3>CONTROL Y AUTOMATIZACIÓN</h3>
                             </div>
                             <div class="col">
-                                <img src={monitoreo} alt=""></img>
+                                <img class="img-fluid" src={monitoreo} alt=""></img>
                                 <h3>MONITOREO DE AGUA Y ENERGIA </h3>
                             </div>
                             <div class="col">
-                                <img src={circuito} alt=""></img>
+                                <img class="img-fluid" src={circuito} alt=""></img>
                                 <h3>CIRCUITO CERRADO DE TV</h3>
                             </div>
                         </div>
                         <div class="row">    
                             <div class="col">
-                                <img src={smoke} alt=""></img>
+                                <img class="img-fluid" src={smoke} alt=""></img>
                                 <h3>SMOKE CONTROL</h3>
                             </div>
                             <div class="col">
-                                <img src={controlAsistencia} alt=""></img>
+                                <img class="img-fluid" src={controlAsistencia} alt=""></img>
                                 <h3>CONTROL DE ASISTENCIA</h3>
                             </div>
                             <div class="col">
-                                <img src={paneles} alt=""></img>
+                                <img class="img-fluid" src={paneles} alt=""></img>
                                 <h3>PANELES SOLARES</h3>
                             </div>
                         </div>
                         <div class="row">    
                             <div class="col">
-                                <img src={alarmas} alt=""></img>
+                                <img class="img-fluid" src={alarmas} alt=""></img>
                                 <h3>ALARMA CONTRA INCENDIOS</h3>
                             </div>
                             <div class="col">
-                                <img src={iluminacion} alt=""></img>
+                                <img class="img-fluid" src={iluminacion} alt=""></img>
                                 <h3>INSTALACIÓN ILUMINACIÓN LED</h3>
                             </div>
                         </div>

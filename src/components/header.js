@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <div className="d-flex justify-content-end --bg-green-500">
-        <nav className="d-flex align-items-center">
+        <nav className="d-flex align-items-center" class="img-fluid">
           <Link className="mx-2">Twitter</Link>
           <Link className="mx-2">Facebook</Link>
           <Link className="mx-2">Youtube</Link>
