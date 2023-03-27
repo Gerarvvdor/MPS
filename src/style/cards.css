@@ -1,0 +1,10 @@
+.card {
+    border-radius: 15px;
+    margin: 5px;
+    border: none;
+}
+
+.card img{
+    margin: 5px;
+    border-radius: 15px;
+}

@@ -13,10 +13,15 @@ const RenewableEnergies = () => {
         <>
             <h1 class="text-center mb-3">Energías renovables</h1>
             <div class="container">
-                <h3>ENERGÍA FOTOVOLTAICA</h3>
-                <p>Los paneles fotovoltaicos: están formados por numerosas celdas que convierten la luz en electricidad. Las celdas a veces son llamadas células fotovoltaicas. Estas celdas dependen del efecto fotovoltaico por el que la energía luminosa produce cargas positiva y negativa en dos semiconductores próximos de diferente tipo, produciendo así un campo eléctrico capaz de generar una corriente.</p>
-                <img src={solar1} alt="" class="img-fluid"></img>
-            </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>ENERGÍA FOTOVOLTAICA</h3>
+                        <p>Los paneles fotovoltaicos: están formados por numerosas celdas que convierten la luz en electricidad. Las celdas a veces son llamadas células fotovoltaicas. Estas celdas dependen del efecto fotovoltaico por el que la energía luminosa produce cargas positiva y negativa en dos semiconductores próximos de diferente tipo, produciendo así un campo eléctrico capaz de generar una corriente.</p>                </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <img src={solar1} alt="" class="img-fluid"></img>
+                    </div>
+                </div>
             <div class="container">
                 <div class="row">
                     <div class="col">

@@ -2,40 +2,93 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../images/logo.png';
 import lead from './../images/lead.png';
-import reliable from './../images/control.png';
+import reliable from './../images/reliablec.png';
 import leed from './../images/hearth.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
   return (
     <>
-      <div className="d-flex justify-content-end --bg-green-500">
-        <nav className="d-flex align-items-center" class="img-fluid">
-          <Link className="mx-2">Twitter</Link>
-          <Link className="mx-2">Facebook</Link>
-          <Link className="mx-2">Youtube</Link>
-          <Link className="mx-2">Instagram</Link>
-          <Link className="mx-2">+503 2247-3400</Link>
-          <Link className="mx-2">info@mpservice.com.sv</Link>
-        </nav>
-      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+        <img class="navbar-brand img-fluid" src={logo}/>
+          <img class='navbar-brand img-fluid' src={lead}/>
+          <img class="navbar-brand img-fluid" src={leed}/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/aboutUs">NOSOTROS</a>
+              </li>
 
-      <div className="d-flex align-items-center justify-content-between bg-light p-3">
-        <img src={logo} alt="MPLogo" />
-        <img src={lead} alt="leadLogo" />
-        <nav className="d-flex align-items-center">
-          <Link to="/" className="mx-3">INICIO</Link>
-          <Link to="/aboutUs" className="mx-3">NOSOTROS</Link>
-          <Link to="/products" className="mx-3">PRODUCTOS</Link>
-          <Link to="/services" className="mx-3">SERVICIOS</Link>
-          <Link to="/proyects" className="mx-3">PROYECTOS</Link>
-          <Link to="/renewable" className="mx-3">ENERGIAS RENOVABLES</Link>
-          <Link to="/brands" className="mx-3">MARCAS</Link>
-          <Link to="/contacts" className="mx-3">CONTACTOS</Link>
-          <img src={reliable} alt="" className="mx-3" />
-        </nav>
-        <img src={leed} alt="leed" />
-      </div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Chillers
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Enfriados por agua</a></li>
+                      <li><a class="dropdown-item" href="#">Enfriados por aire</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Aires Acondicionados
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Residencial y comercial</a></li>
+                      <li><a class="dropdown-item" href="#">Sistema de refrigerante de flujo variable</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Unidades centrales</a></li>
+                  <li><a class="dropdown-item" href="#">Fan COIL de agua fría</a></li>
+                  <li><a class="dropdown-item" href="#">Control y Automatización</a></li>
+                  <li><a class="dropdown-item" href="#">Monitoreo de agua y energía</a></li>
+                  <li><a class="dropdown-item" href="#">Circuito derrado de TV</a></li>
+                  <li><a class="dropdown-item" href="#">Smoke Control</a></li>
+                  <li><a class="dropdown-item" href="#">Control de asistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Paneles Solares</a></li>
+                  <li><a class="dropdown-item" href="#">Alarma contra incendios</a></li>
+                  <li><a class="dropdown-item" href="#">Instalación de iluminación LED</a></li>
+                  <li><hr class="dropdown-divider"/></li>
+                  <li><a class="dropdown-item" href="/products">Ver todos los productos</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/services">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/proyects">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/renewable">ENERGIAS RENOVABLES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/brands">MARCAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contacts">CONTACTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
+        </div>
+      </nav>
     </>
   );
 };

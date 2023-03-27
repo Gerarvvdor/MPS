@@ -5,7 +5,7 @@ const HomePage = () => {
     return (
         <>
             <div class="container">
-                <img src={main} alt="main_image"></img>
+            <img class="img-fluid" src={main} alt="main_image"></img>
             </div>
         </>
     );

@@ -7,7 +7,7 @@ const Services = () => {
 return (
     <>
         <div class="container">
-            <h1>SERVICIOS</h1>
+            <h1 class="text-center">SERVICIOS</h1>
                 <div class="container">
                     <div class="row">
                         <div class="col">
