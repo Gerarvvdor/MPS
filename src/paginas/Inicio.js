@@ -5,8 +5,11 @@ const HomePage = () => {
     return (
         <>
             <div class="container">
-            <img class="img-fluid" src={main} alt="main_image"></img>
+                <div class="container-fuid">
+                    <img class="img-fluid" src={main} alt="main_image"></img>
+                </div>
             </div>
+            
         </>
     );
 }

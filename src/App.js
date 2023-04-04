@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, {useState} from "react";
+
 //components//
 import Header from "./../src/components/header";
 import Footer from "./components/footer";
@@ -15,6 +15,7 @@ import Proyects from "./paginas/proyects";
 import Renewable from "./paginas/renewable"
 import Brands from "./paginas/brands";
 import Contacts from "./paginas/contacts";
+import AutoControl from "./paginas/autoControl";
 
 const App = () => {
 
@@ -35,6 +36,7 @@ const App = () => {
                         <Route path="/renewable" element={<Renewable/>}/>
                         <Route path="/brands" element={<Brands/>}/>
                         <Route path="/contacts" element={<Contacts/>}/>
+                        
                         </Routes>
                         
                     </main>

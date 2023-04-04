@@ -3,7 +3,11 @@ import React from "react";
 const ChillerAgua = () => {
     return(
         <>
-        <p>fdsjkfljdskfjdsfdsfdsfdsfds</p>
+            <div class="container">
+                <div >
+
+                </div>
+            </div>
         </>
     );
 }
