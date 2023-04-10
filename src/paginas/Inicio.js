@@ -5,8 +5,8 @@ const HomePage = () => {
     return (
         <>
             <div class="container">
-                <div class="container-fuid">
-                    <img class="img-fluid" src={main} alt="main_image"></img>
+                <div class="text-center">
+                    <img class="img-fluid img-responsive" src={main} alt="main_image"></img>
                 </div>
             </div>
             

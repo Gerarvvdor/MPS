@@ -13,9 +13,9 @@ const Brands = () => {
         <>
         <div class="container">
         <h1 class="text-center">MARCAS</h1>
-            <div>
+            
                 <div class="row">
-                    <div class="col">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <img src={Reliable} class="img-fluid" alt="reliableLogo"/>
                             <div class="card-body">
@@ -25,22 +25,22 @@ const Brands = () => {
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <img src={Lennox} class="img-fluid" alt="LennoxLogo"/>
                             <div class="card-body">
                                 <h5 class="card-title">Lennox</h5>
-                                <p><a href="https://www.lennox.com/"target="_blank"  rel="noreferrer">Lennox International Inc.</a> Es un proveedor de productos de control climático para los mercados de calefacción, ventilación, aire acondicionado y refrigeración. fundada en 1895, en Marshalltown, Iowa, por Dave Lennox, el cual desarrollo numerosos avances en las soluciones de calefacción, refrigeración y control climático.</p>
+                                <p><a href="https://www.lennox.com/" target="_blank" rel="noreferrer">Lennox International Inc.</a> Es un proveedor de productos de control climático para los mercados de calefacción, ventilación, aire acondicionado y refrigeración. fundada en 1895, en Marshalltown, Iowa, por Dave Lennox, el cual desarrollo numerosos avances en las soluciones de calefacción, refrigeración y control climático.</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="col">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
-                            <img src="" class="img-fluid" alt="lennoxLogo"  rel="noreferrer"/>
+                            <img src="" class="img-fluid" alt="lennoxLogo"/>
                             <div class="card-body">
                                 <h5 class="card-title">York</h5>
-                                <p>York es el nombre de una compañía que comenzó en York, Pennsylvania, EE. UU., En 1874, que desarrolló la marca York de equipos de refrigeración y HVAC. La marca York ahora es propiedad (desde 2005) de <a href="http://www.johnsoncontrols.com/">Jhhnson Controls </a> una compañía americana que ofrece productos y servicios para optimizar la eficiencia energética en edificios.</p>
+                                <p>York es el nombre de una compañía que comenzó en York, Pennsylvania, EE. UU., En 1874, que desarrolló la marca York de equipos de refrigeración y HVAC. La marca York ahora es propiedad (desde 2005) de <a href="http://www.johnsoncontrols.com/" target="_blank" rel="noreferrer">Johnson Controls </a> una compañía americana que ofrece productos y servicios para optimizar la eficiencia energética en edificios.</p>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const Brands = () => {
 
                 
                 <div class="row">   
-                    <div class="col">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <img src={Belimo} class="img-fluid" alt="belimoLogo"  rel="noreferrer"/>
                             <div class="card-body">
@@ -58,7 +58,7 @@ const Brands = () => {
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <img src={Rib} class="img-fluid" alt="ribLogo"/>
                             <div class="card-body">
@@ -68,7 +68,7 @@ const Brands = () => {
                         </div>
                     </div>
                     
-                    <div class="col">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <img src={Adelte} class="img-fluid" alt="adelteLogo"/>
                             <div class="card-body">
@@ -78,7 +78,7 @@ const Brands = () => {
                         </div>
                     </div>        
                 </div> 
-            </div>
+            
         </div>
 
         </>

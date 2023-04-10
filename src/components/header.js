@@ -15,16 +15,24 @@ const Header = () => {
   
   return (
     <>
-    <div className='socialMedia'>
-      <div class="text-center">
-          <div class="row row-cols-auto">
-          <div class="col"><a href='https://twitter.com/MPSservice' target='_blank'><i class="bi bi-twitter" style={{ fontSize: '1.5rem' , color: '#00acee'}}></i></a></div>
-          <div class="col"><a href='https://www.facebook.com/profile.php?id=100063475033565' target='_blank'><i class="bi bi-facebook" style={{ fontSize: '1.5rem', color: '#3b5998'}}></i></a></div>
-          <div class="col"><a href='https://www.youtube.com/channel/UC8Pm_a_1mfNMEsJuf66P56w?view_as=subscriber' target='_blank'><i class="bi bi-youtube" style={{ fontSize: '1.5rem', color: '#FF0000' }}></i></a></div>
-          <div class="col"><a href='https://www.instagram.com/mp_service_/' target='_blank'><i class="bi bi-instagram" style={{ fontSize: '1.5rem' , color: '#E1306C'}}></i></a>   </div>
+      <div className='socialMedia'>
+          <div className="container-fluid text-center">
+            <div className="d-flex justify-content-end">
+              <a href='https://twitter.com/MPSservice' target='_blank' className='me-3'>
+                <i className="bi bi-twitter" style={{ fontSize: '1.5rem' , color: '#00acee'}}></i>
+              </a>
+              <a href='https://www.facebook.com/profile.php?id=100063475033565' target='_blank' className='me-3'>
+                <i className="bi bi-facebook" style={{ fontSize: '1.5rem', color: '#3b5998'}}></i>
+              </a>
+              <a href='https://www.youtube.com/channel/UC8Pm_a_1mfNMEsJuf66P56w?view_as=subscriber' target='_blank' className='me-3'>
+                <i className="bi bi-youtube" style={{ fontSize: '1.5rem', color: '#FF0000' }}></i>
+              </a>
+              <a href='https://www.instagram.com/mp_service_/' target='_blank'>
+                <i className="bi bi-instagram" style={{ fontSize: '1.5rem' , color: '#E1306C'}}></i>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       
       <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">

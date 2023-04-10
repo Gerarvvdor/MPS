@@ -1,4 +1,7 @@
 import React from "react";
+
+//stylesheet//
+import "./../style/cards.css"
 import { Carousel } from "react-bootstrap";
 import eolic from "./../images/er5.jpg";
 import fan from "./../images/eo3.jpg";
