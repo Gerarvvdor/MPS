@@ -6,20 +6,8 @@ import { useHistory } from "react-router-dom";
 import "./../style/cards.css"
 
 //import pages//
-import ChillerAgua from "./paginasProductos/chillerAgua";
-import chillerAire from "./paginasProductos/chillerAire";
-import aireResidencial from "./paginasProductos/aireaAcondicionado";
-import aireVRF from "./paginasProductos/VRF";
-import centralUnity from "./paginasProductos/unidadesCentrales";
-import fainCoil from "./paginasProductos/fainCoil";
-import automatic from "./autoControl";
-import waterAndEnergy from "./paginasProductos/monitoreo";
-import tvClosedSystem from "./paginasProductos/circuitoCerrado";
-import smokeControl from "./paginasProductos/smoke";
-import asistControl from "./paginasProductos/controlDeAsistencia";
-import solarPanel from "./paginasProductos/paneles";
-import antiFireAlarm from "./paginasProductos/alarmas";
-import lightInstalation from "./paginasProductos/iluminacion";
+
+
 //import images//
 import agua from "./../images/chiller_agua.png";
 import aire from "./../images/chiller_aire.png";
@@ -42,7 +30,7 @@ const Products = () => {
             <h1 class="text-center">PRODUCTOS</h1>
         
             <Routes>
-                <Route path="/products/*" element={<ChillerAgua/>}/>
+                <Route path="/products/*" element=""/>
             </Routes>
                 <nav>
                     <div class="container">

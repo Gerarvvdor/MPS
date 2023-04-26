@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from './../images/logo.png';
 import lead from './../images/lead.png';
 import reliable from './../images/reliablec.png';
@@ -7,27 +7,21 @@ import leed from './../images/hearth.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
-  const [showSubMenu, setShowSubMenu] = useState(false);
-
-  const handleClick = () => {
-    setShowSubMenu(!showSubMenu);
-  };
-  
   return (
     <>
       <div className='socialMedia'>
           <div className="container-fluid text-center">
             <div className="d-flex justify-content-end">
-              <a href='https://twitter.com/MPSservice' target='_blank' className='me-3'>
+              <a href='https://twitter.com/MPSservice' target='_blank' rel="noreferrer" className='me-3'>
                 <i className="bi bi-twitter" style={{ fontSize: '1.5rem' , color: '#00acee'}}></i>
               </a>
-              <a href='https://www.facebook.com/profile.php?id=100063475033565' target='_blank' className='me-3'>
+              <a href='https://www.facebook.com/profile.php?id=100063475033565' target='_blank' rel="noreferrer" className='me-3'>
                 <i className="bi bi-facebook" style={{ fontSize: '1.5rem', color: '#3b5998'}}></i>
               </a>
-              <a href='https://www.youtube.com/channel/UC8Pm_a_1mfNMEsJuf66P56w?view_as=subscriber' target='_blank' className='me-3'>
+              <a href='https://www.youtube.com/channel/UC8Pm_a_1mfNMEsJuf66P56w?view_as=subscriber' target='_blank' rel="noreferrer" className='me-3'>
                 <i className="bi bi-youtube" style={{ fontSize: '1.5rem', color: '#FF0000' }}></i>
               </a>
-              <a href='https://www.instagram.com/mp_service_/' target='_blank'>
+              <a href='https://www.instagram.com/mp_service_/' target='_blank' rel="noreferrer" className='me-3'>
                 <i className="bi bi-instagram" style={{ fontSize: '1.5rem' , color: '#E1306C'}}></i>
               </a>
             </div>
@@ -46,77 +40,54 @@ const Header = () => {
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"><Link to="/" style={{ textDecoration: 'none', color: 'black' }}>INICIO</Link></a>
+                </li>
+
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/aboutUs">NOSOTROS</a>
+                <a class="nav-link active" aria-current="page"><Link to="aboutUs" style={{ textDecoration: 'none', color: 'black' }}>NOSOTROS</Link></a>
               </li>
 
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown" style={{color: 'black'}}>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   PRODUCTOS
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item dropend" onClick={handleClick}>
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Chillers
-                    </a>
-                    {showSubMenu && (
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onClick={handleClick}>Enfriados por agua</a></li>
-                        <li><a class="dropdown-item" href="#" onClick={handleClick}>Enfriados por aire</a></li>
-                      </ul>
-                    )}
-                  </li>
-                  <li class="nav-item dropend" onClick={handleClick}>
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Aires Acondicionados
-                    </a>
-                    {showSubMenu && (
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" onClick={handleClick}>Residencial y comercial</a></li>
-                        <li><a class="dropdown-item" href="#" onClick={handleClick}>Sistema de refrigerante de flujo variable</a></li>
-                      </ul>
-                    )}
-                  </li>
-                  <li><a class="dropdown-item" href="#">Unidades centrales</a></li>
-                  <li><a class="dropdown-item" href="#">Fan COIL de agua fría</a></li>
-                  <li><a class="dropdown-item" href="#">Control y Automatización</a></li>
-                  <li><a class="dropdown-item" href="#">Monitoreo de agua y energía</a></li>
-                  <li><a class="dropdown-item" href="#">Circuito derrado de TV</a></li>
-                  <li><a class="dropdown-item" href="#">Smoke Control</a></li>
-                  <li><a class="dropdown-item" href="#">Control de asistencia</a></li>
-                  <li><a class="dropdown-item" href="#">Paneles fotovoltáicos</a></li>
-                  <li><a class="dropdown-item" href="#">Alarma contra incendios</a></li>
-                  <li><a class="dropdown-item" href="#">Instalación de iluminación LED</a></li>
+                  <Link to="chillers" style={{textDecoration: 'none', color: 'black'}} ><li><a class="dropdown-item">Chillers</a></li></Link>
+                  <Link to="aireAcondicionado" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Aires Acondicionados</a></li></Link>
+                  <Link to="unidadesCentrales" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Unidades centrales</a></li></Link>
+                  <Link to="fanCoil" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Fan COIL de agua fría</a></li></Link>
+                  <Link to="ctrlAutomatización" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Control y Automatización</a></li></Link>
+                  <Link to="monitoreo" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Monitoreo de agua y energía</a></li></Link>
+                  <Link to="circuitoTV" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Circuito derrado de TV</a></li></Link>
+                  <Link to="smokeControl" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Smoke Control</a></li></Link>
+                  <Link to="asistControl" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Control de asistencia</a></li></Link>
+                  <Link to="paneles" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Paneles fotovoltáicos</a></li></Link>
+                  <Link to="fireAlarm" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Alarma contra incendios</a></li></Link>
+                  <Link to="ledLigths" style={{textDecoration: 'none', color: 'black'}}><li><a class="dropdown-item">Instalación de iluminación LED</a></li></Link>
                   <li><hr class="dropdown-divider"/></li>
-                  <li><a class="dropdown-item" href="/products">Ver todos los productos</a></li>
+                  <Link to="products" style={{ textDecoration: 'none', color: 'black' }}><li><a class="dropdown-item">Ver todos los productos</a></li></Link>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/services">SERVICIOS</a>
+                <a class="nav-link active" aria-current="page"><Link to="services" style={{ textDecoration: 'none', color: 'black' }}>SERVICIOS</Link></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/proyects">PROYECTOS</a>
+                <a class="nav-link active" aria-current="page"><Link to="proyects" style={{ textDecoration: 'none', color: 'black' }}>PROYECTOS</Link></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/renewable">ENERGIAS RENOVABLES</a>
+                <a class="nav-link active" aria-current="page"><Link to="renewable" style={{ textDecoration: 'none', color: 'black' }}>ENERGIAS RENOVABLES</Link></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/brands">MARCAS</a>
+                <a class="nav-link active" aria-current="page"><Link to="brands" style={{ textDecoration: 'none', color: 'black' }}>MARCAS</Link></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/contacts">CONTACTOS</a>
+                <a class="nav-link active" aria-current="page"><Link to="contacts" style={{ textDecoration: 'none', color: 'black' }}>CONTACTOS</Link></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/autoControl">CONTROL Y AUTOMATIZACIÓN</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page">
-
-                </a>
+                <a class="nav-link active" aria-current="page"><Link to="autoControl" style={{ textDecoration: 'none', color: 'black' }}>CONTROL Y AUTOMATIZACIÓN</Link></a>
               </li>
             </ul>
           </div>  

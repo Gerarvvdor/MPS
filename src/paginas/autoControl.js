@@ -1,10 +1,13 @@
 import React from "react";
 
-const autoControl =() => {
-
-    <>
-        <h1>Hola Mundo</h1>
-    </>
+const autoControl = () => {
+    return(
+       <>
+            <div>
+                <h1>Hola mundo</h1>
+            </div>
+        </> 
+    );
 }
 
 export default autoControl;
