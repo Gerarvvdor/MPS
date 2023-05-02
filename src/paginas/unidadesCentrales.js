@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import UC1 from "../images/u1.png"
-import UC2 from "../images/u2.png"
-import UC3 from "../images/u3.png"
-import UC4 from "../images/u4.png"
-import UC5 from "../images/u5.png"
-import UC6 from "../images/u6.png"
+import UC1 from "../images/u1.avif"
+import UC2 from "../images/u2.avif"
+import UC3 from "../images/u3.avif"
+import UC4 from "../images/u4.avif"
+import UC5 from "../images/u5.avif"
+import UC6 from "../images/u6.avif"
 
 
 const unidadesCentrales = () => {
@@ -20,7 +19,6 @@ const unidadesCentrales = () => {
                             <img src={UC1} class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title">Unidades Manejadoras de aire YORK®</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Más detalles</a>
                             </div>
                         </div>
@@ -30,7 +28,6 @@ const unidadesCentrales = () => {
                             <img src={UC2} class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title">Unidades Manejadoras de aire (UMA)</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Más detalles</a>
                             </div>
                         </div>
@@ -40,7 +37,6 @@ const unidadesCentrales = () => {
                             <img src={UC3} class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title">Manejadora de aire YAH para montaje en techo</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Más detalles</a>
                             </div>
                         </div>
@@ -52,7 +48,6 @@ const unidadesCentrales = () => {
                             <img src={UC4} class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title">YAM </h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Más detalles</a>
                             </div>
                         </div>
@@ -62,7 +57,6 @@ const unidadesCentrales = () => {
                             <img src={UC5} class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title">YSM unidad de manejo de aire doble pared</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Más detalles</a>
                             </div>
                         </div>
@@ -72,7 +66,6 @@ const unidadesCentrales = () => {
                             <img src={UC6} class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title">YSM-B</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Más detalles</a>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import smoke from "../images/smoke.png"
+import smoke from "../images/smoke.avif"
 
 const smokeControl = () => {
     return(

@@ -1,16 +1,9 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-import foto1 from './../images/banco2.jpg';
-import foto2 from './../images/smp1.jpg';
-import foto3 from './../images/todos.jpg'
+import foto1 from './../images/banco2.avif';
+import foto2 from './../images/smp1.avif';
+import foto3 from './../images/todos.avif'
 import "./../style/carousel.css"
 
-const images = [
-    {foto1},
-    {foto2},
-    {foto3},
-  ];
-  
 const CarouselSlide = () => {
   return (
     <>

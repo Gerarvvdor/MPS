@@ -2,16 +2,11 @@ import React from "react";
 
 //stylesheet//
 import "./../style/cards.css"
-import { Carousel } from "react-bootstrap";
-import eolic from "./../images/er5.jpg";
-import fan from "./../images/eo3.jpg";
-import eolicTwo from "./../images/er3.jpg";
+import eolic from "./../images/er5.avif";
+import fan from "./../images/eo3.avif";
+import eolicTwo from "./../images/er3.avif";
 
-const images = [
-    {eolic},
-    {fan},
-    {eolicTwo},
-  ];
+
 const SecondCarouselSlide = () => {
     return (
       <div class="container">

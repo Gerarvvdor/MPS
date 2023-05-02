@@ -17,9 +17,14 @@ import Brands from "./paginas/brands";
 import Contacts from "./paginas/contacts";
 import AutoControl from "./paginas/autoControl";
 
-//sub pages imports//
+//sub pagess imports//
+//products pages//
 import Chillers from "./paginas/chillers";
+import ChillersAgua from "./paginas/chillersAgua";
+import ChillersAire from "./paginas/chillersAire";
 import AiresAcondicionados from "./paginas/airesAcondicionados";
+import AireComercial from "./paginas/aireComercial";
+import VRF from "./paginas/vrf";
 import UnidadesCentrales from "./paginas/unidadesCentrales";
 import FanCOIL from "./paginas/fanCOIL";
 import CrtlAutomatización from "./paginas/crtlAutomatización";
@@ -30,21 +35,34 @@ import Asistance from "./paginas/asistControl";
 import Panels from "./paginas/panels";
 import FireAlarm from "./paginas/fireAlarms";
 import LedLights from "./paginas/ledLigths";
+//proyects pages//
+import Freund from "./paginas/freund";
+import Sherwin from "./paginas/sherwin";
+import Fosalud from "./paginas/fosalud";
+import Pgr from "./paginas/pgr";
+import Solaris from "./paginas/solaris";
+import Cepa from "./paginas/cepa";
+import BancoLocal from "./paginas/bancoLocal";
+import LaCentroAmericana from "./paginas/laCentroAmericana";
+import Fisdl from "./paginas/fisdl";
+import Ipsfa from "./paginas/ipsfa";
+import Avianca from "./paginas/avianca";
+import Omnisport from "./paginas/omnisport";
 
 const App = () => {
 
     return (
         <>
-            <div className="contenedor">
+            <div class="conainer" style={{backgroundColor: 'var(--fift-color)'}}>
                 <Header/>
 
-                <div className="contenido">
+                <div class="container">
                     <main>
                     
                         <Routes>
                         <Route path="/" element={<HomePage/>}/>
                         <Route path="/aboutUs" element={<AboutUs/>}/>
-                        <Route path="/products/*" element={<Products/>}/>
+                        <Route path="/products" element={<Products/>}/>
                         <Route path="/services" element={<Services/>}/>
                         <Route path="/proyects" element={<Proyects/>}/>
                         <Route path="/renewable" element={<Renewable/>}/>
@@ -66,11 +84,41 @@ const App = () => {
                         <Route path="/fireAlarm" element={<FireAlarm/>}/>
                         <Route path="/ledLigths" element={<LedLights/>}/>
 
-                        {/*Routes for proyects page */}
-
-                        {/*Routes for proyects page */}
-                        </Routes>
+                        {/*Routes for products page */}
+                        <Route path="/chillers/chillersAgua" element={<ChillersAgua/>}/>
+                        <Route path="/chillers/chillersAire" element={<ChillersAire/>}/>
+                        <Route path="/products/chillersAgua" element={<ChillersAgua/>}/>
+                        <Route path="/products/chillersAire" element={<ChillersAire/>}/>
+                        <Route path="/aireAcondicionado/aireComercial" element={<AireComercial/>}/>
+                        <Route path="/aireAcondicionado/VRF" element={<VRF/>}/>
+                        <Route path="/products/aireComercial" element={<AireComercial/>}/>
+                        <Route path="/products/VRF" element={<VRF/>}/>
+                        <Route path="/products/unidadesCentrales" element={<UnidadesCentrales/>}/>
+                        <Route path="/products/fanCoil" element={<FanCOIL/>}></Route>
+                        <Route path="/products/ctrlAutomatización/" element={<CrtlAutomatización/>}/>
+                        <Route path="/products/monitoreo" element={<MonitoreoH2O/>}/>
+                        <Route path="/products/circuitoTV" element={<TVcircuit/>}/>
+                        <Route path="/products/smokeControl" element={<SmokeControl/>}/>
+                        <Route path="/products/asistControl" element={<Asistance/>}/>
+                        <Route path="/products/paneles" element={<Panels/>}/>
+                        <Route path="/products/fireAlarm" element={<FireAlarm/>}/>
+                        <Route path="/products/ledLigths" element={<LedLights/>}/>
                         
+                        {/*Routes for proyects page */}
+                        <Route path="/proyects/freund" element={<Freund/>}/>
+                        <Route path="/proyects/sherwin" element={<Sherwin/>}/>
+                        <Route path="/proyects/fosalud" element={<Fosalud/>}/>
+                        <Route path="/proyects/pgr" element={<Pgr/>}/>
+                        <Route path="/proyects/solaris" element={<Solaris/>}/>
+                        <Route path="/proyects/cepa" element={<Cepa/>}/>
+                        <Route path="/proyects/bancoLocal" element={<BancoLocal/>}/>
+                        <Route path="/proyects/laCentroAmericana" element={<LaCentroAmericana/>}/>
+                        <Route path="/proyects/fisdl" element={<Fisdl/>}/>
+                        <Route path="/proyects/ipsfa" element={<Ipsfa/>}/>
+                        <Route path="/proyects/avianca" element={<Avianca/>}/>
+                        <Route path="/proyects/omnisport" element={<Omnisport/>}/>
+                        </Routes>
+
                     </main>
                 </div>
                 <Footer/>

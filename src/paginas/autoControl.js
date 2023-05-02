@@ -3,8 +3,8 @@ import React from "react";
 const autoControl = () => {
     return(
        <>
-            <div>
-                <h1>Hola mundo</h1>
+            <div class="text-center"> 
+                <h1>Control y automatización</h1>
             </div>
         </> 
     );

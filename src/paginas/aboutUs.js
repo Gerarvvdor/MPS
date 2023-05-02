@@ -1,34 +1,34 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import header from "./../images/header.png"
+import header from "./../images/header.avif"
 import CarouselSlide from "../components/carousel";
 
 
 const AboutUs = () => {
   return (
     <>
-    <div className="container">
-      <div className="row">
-        <div className="col-md">
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
           <CarouselSlide />
         </div>
-        <div className="col-md">
+        <div class="col-md">
           <div>
-            <h1 className="text-center">ACERCA DE NOSOTROS</h1>
+            <h1 class="text-center">ACERCA DE NOSOTROS</h1>
 
-            <p className="text-justify">
+            <p class="text-justify">
               Somos una empresa dedicada al montaje de equipo electromecánico
               con especialidad en aire acondicionado, refrigeración y
               ventilación mecánica.
             </p>
-            <p className="text-justify">
+            <p class="text-justify">
               Contamos con una línea especializada en automatización de
               edificios. Somos representantes de empresas internacionales muy
               importantes y distribuidores de las marcas más prestigiosas del
               mercado.
             </p>
-            <p className="text-justify">
+            <p class="text-justify">
               Damos soporte técnico y servicio de mantenimiento a los equipos
               que instalamos, dando un excelente servicio gracias a nuestro
               personal altamente capacitado.
@@ -36,7 +36,8 @@ const AboutUs = () => {
           </div>
           <button
             type="button"
-            className="btn btn-secondary"
+            class="btn"
+            style={{backgroundColor: 'var(--secondary-color)'}}
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
@@ -46,19 +47,19 @@ const AboutUs = () => {
       </div>
 
         <div
-            className="modal fade"
+            class="modal fade"
             id="exampleModal"
             tabIndex="-1"
             aria-labelledby="exampleModalLabel"
             aria-hidden="true">
 
-            <div className="modal-dialog">
-                <div className="modal-content">
-                    <div className="modal-header">
-                    <img src={header} alt="ACERCA DE NOSOTROS" className="img-fluid" />
+            <div class="modal-dialog">
+                <div class="modal-content" style={{backgroundColor: 'var(--primary-color)'}}>
+                    <div class="modal-header">
+                    <img src={header} alt="ACERCA DE NOSOTROS" class="img-fluid" />
                     </div>
-                    <div className="modal-body">
-                    <p className="text-justify">
+                    <div class="modal-body">
+                    <p class="text-justify">
                     MP SERVICE surge principalmente como una empresa dedicada al
                     servicio de mantenimiento en edificios e industria,
                     específicamente en equipos de aire acondicionado; así como al
@@ -71,7 +72,7 @@ const AboutUs = () => {
                     con tecnología de última generación, con personal calificado y
                     entrenado en Estados Unidos y Canadá.
                     </p>
-                    <p className="text-justify">
+                    <p class="text-justify">
                     Esto nos permite ahora ofrecer no solo un servicio de
                     mantenimiento, sino una gama de productos y servicios,
                     orientados a satisfacer multitud de necesidades en las
@@ -81,10 +82,11 @@ const AboutUs = () => {
                     etc.
                     </p>
                     </div>
-                    <div className="modal-footer">
+                    <div class="modal-footer">
                     <button
                         type="button"
-                        className="btn btn-secondary --bs-primary-rgb"
+                        class="btn"
+                        style={{backgroundColor: 'var(--quaternary-color)'}}
                         data-bs-dismiss="modal">
                     Cerrar
                     </button>
@@ -92,12 +94,12 @@ const AboutUs = () => {
                 </div>
             </div>
         </div>
-        <div className="row">
-            <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card">
-                    <div className="card-body text-center">
-                        <i className="bi bi-bullseye" style={{ fontSize: '4rem' }}></i>
-                        <h4 className="card-title">Misión</h4>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-bullseye" style={{ fontSize: '4rem' }}></i>
+                        <h4 class="card-title">Misión</h4>
                         <p>
                         Realizar suministros y montajes de equipos electromecánicos y
                         electrónicos, en especial equipos de aire acondicionado, sistemas de
@@ -108,11 +110,11 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-lg-4 col-md-6 mb-4">
-                <div className="card">
-                    <div className="card-body text-center">
-                        <i className="bi bi-eye" style={{ fontSize: '4rem' }}></i>
-                         <h4 className="card-title text-center">Visión</h4>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="bi bi-eye" style={{ fontSize: '4rem' }}></i>
+                         <h4 class="card-title text-center">Visión</h4>
                         <p>
                         Ser una empresa de referencia, dando a nuestros clientes altos
                         estándares en instalaciones y servicios, buscando un bajo impacto
@@ -122,14 +124,14 @@ const AboutUs = () => {
                         </div>
                         </div>
                     </div>
-                <div className="col-lg-4 col-md-6 mb-4">
-                    <div className="card">
-                        <div className="card-body">
-                            <div className="text-center">
-                                <i className="bi bi-gem" style={{ fontSize: '4rem' }}></i>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <i class="bi bi-gem" style={{ fontSize: '4rem' }}></i>
                                 </div>
-                                <h4 className="card-title text-center">Valores</h4>
-                                <ul className="list-unstyled">
+                                <h4 class="card-title text-center">Valores</h4>
+                                <ul class="list-unstyled">
                                 <li>Calidad</li>
                                 <li>Compromiso</li>
                                 <li>Seguridad</li>

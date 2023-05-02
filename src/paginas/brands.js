@@ -1,12 +1,13 @@
 import React from "react";
 import "./../style/cards.css"
 //Logos//
-import Reliable from "./../images/reliablec.png";
-import Lennox from "./../images/lenox.png";
-import Belimo from "./../images/belimo.png";
+import Reliable from "./../images/reliablec.avif";
+import Lennox from "./../images/lenox.avif";
+import Belimo from "./../images/belimo.avif";
 //Import York logo//
-import Rib from "./../images/rib.png";
-import Adelte from "./../images/adelte.png";
+import York from "../images/york.avif"
+import Rib from "./../images/rib.avif";
+import Adelte from "./../images/adelte.avif";
 //style="width: 18rem;"//
 const Brands = () => {
     return (
@@ -37,7 +38,7 @@ const Brands = () => {
                     
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
-                            <img src="" class="img-fluid" alt="lennoxLogo"/>
+                            <img src={York} class="img-fluid" alt="lennoxLogo"/>
                             <div class="card-body">
                                 <h5 class="card-title">York</h5>
                                 <p>York es el nombre de una compañía que comenzó en York, Pennsylvania, EE. UU., En 1874, que desarrolló la marca York de equipos de refrigeración y HVAC. La marca York ahora es propiedad (desde 2005) de <a href="http://www.johnsoncontrols.com/" target="_blank" rel="noreferrer">Johnson Controls </a> una compañía americana que ofrece productos y servicios para optimizar la eficiencia energética en edificios.</p>

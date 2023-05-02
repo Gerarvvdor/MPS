@@ -1,16 +1,15 @@
 import React from "react";
-import main from "./../images/principal.png"
+import main from "./../images/principal.avif"
 
 const HomePage = () => {
     return (
-        <>
-            <div class="container">
-                <div class="text-center">
-                    <img class="img-fluid img-responsive" src={main} alt="main_image"></img>
-                </div>
+    <>
+        <div class="container text-center">
+            <div class="">
+                <img class="img-fluid" src={main} alt="main_image"></img>
             </div>
-            
-        </>
+        </div>
+    </>
     );
 }
 export default HomePage;

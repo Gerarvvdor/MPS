@@ -1,7 +1,7 @@
 import React from "react";
-import Mantenimiento from "./../images/mantenimento.png";
-import Reparaciones from "./../images/s7.png";
-import Auditorias from "./../images/auditoria.png";
+import Mantenimiento from "./../images/mantenimento.avif";
+import Reparaciones from "./../images/s7.avif";
+import Auditorias from "./../images/auditoria.avif";
 //style="width: 18rem;//
 const Services = () => {
 return (
