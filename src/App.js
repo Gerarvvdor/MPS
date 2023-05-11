@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 
 //components//
-import Header from "./../src/components/header";
+import Header from "./components/header";
 import Footer from "./components/footer";
 
 //reactDOM//
-import {Routes, Route} from "react-router-dom";
+import {Link, Routes, Route} from "react-router-dom";
 //pages//
 import HomePage from "./paginas/Inicio";
 import AboutUs from "./paginas/aboutUs";
@@ -53,79 +53,132 @@ const App = () => {
 
     return (
         <>
-            <div class="conainer" style={{backgroundColor: 'var(--fift-color)'}}>
-                <Header/>
+        <div class="conainer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-auto bg-light sticky-top">
+                        <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
+                            <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
+                                <li>
+                                    <Link to="/" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                                        <i class="bi-house fs-1"></i>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <div class="dropend">
+                                        <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-basket fs-1"></i>
+                                        </a>
+                                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+                                            <Link to="chillers" style={{textDecoration: 'none', color: 'black'}} ><li><a href="..." class="dropdown-item">Chillers</a></li></Link>
+                                            <Link to="aireAcondicionado" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Aires Acondicionados</a></li></Link>
+                                            <Link to="unidadesCentrales" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Unidades centrales</a></li></Link>
+                                            <Link to="fanCoil" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Fan COIL de agua fría</a></li></Link>
+                                            <Link to="ctrlAutomatización" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Control y Automatización</a></li></Link>
+                                            <Link to="monitoreo" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Monitoreo de agua y energía</a></li></Link>
+                                            <Link to="circuitoTV" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Circuito derrado de TV</a></li></Link>
+                                            <Link to="smokeControl" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Smoke Control</a></li></Link>
+                                            <Link to="asistControl" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Control de asistencia</a></li></Link>
+                                            <Link to="paneles" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Paneles fotovoltáicos</a></li></Link>
+                                            <Link to="fireAlarm" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Alarma contra incendios</a></li></Link>
+                                            <Link to="ledLigths" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Instalación de iluminación LED</a></li></Link>
+                                            <li><hr class="dropdown-divider"/></li>
+                                            <Link to="products" style={{ textDecoration: 'none', color: 'black' }}><li><a href="..." class="dropdown-item">Ver todos los productos</a></li></Link>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <Link to="proyects" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                        <i class="bi bi-clipboard fs-1"></i>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="renewable" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                        <i class="bi bi-lightning-charge fs-1"></i>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="brands" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                        <i class="bi bi-tag fs-1"></i>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="autoControl" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                        <i class="bi bi-gear-wide-connected fs-1"></i>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm p-3 min-vh-100">
+                        <main>
+                        <Header/>
+                            <Routes>
+                                <Route path="/" element={<HomePage/>}/>
+                                <Route path="/aboutUs" element={<AboutUs/>}/>
+                                <Route path="/products" element={<Products/>}/>
+                                <Route path="/services" element={<Services/>}/>
+                                <Route path="/proyects" element={<Proyects/>}/>
+                                <Route path="/renewable" element={<Renewable/>}/>
+                                <Route path="/brands" element={<Brands/>}/>
+                                <Route path="/contacts" element={<Contacts/>}/>
+                                <Route path="/autoControl" element={<AutoControl/>}/>
 
-                <div class="container">
-                    <main>
-                    
-                        <Routes>
-                        <Route path="/" element={<HomePage/>}/>
-                        <Route path="/aboutUs" element={<AboutUs/>}/>
-                        <Route path="/products" element={<Products/>}/>
-                        <Route path="/services" element={<Services/>}/>
-                        <Route path="/proyects" element={<Proyects/>}/>
-                        <Route path="/renewable" element={<Renewable/>}/>
-                        <Route path="/brands" element={<Brands/>}/>
-                        <Route path="/contacts" element={<Contacts/>}/>
-                        <Route path="/autoControl" element={<AutoControl/>}/>
+                                {/* Creating routes for header dropdown menu */}
+                                <Route path="/chillers" element={<Chillers/>}/>
+                                <Route path="/aireAcondicionado" element={<AiresAcondicionados/>}/>
+                                <Route path="/unidadesCentrales" element={<UnidadesCentrales/>}/>
+                                <Route path="/fanCoil" element={<FanCOIL/>}/>
+                                <Route path="/ctrlAutomatización" element={<CrtlAutomatización/>}/>
+                                <Route path="/monitoreo" element={<MonitoreoH2O/>}/>
+                                <Route path="/circuitoTV" element={<TVcircuit/>}/>
+                                <Route path="/smokeControl" element={<SmokeControl/>}/>
+                                <Route path="/asistControl" element={<Asistance/>}/>
+                                <Route path="/paneles" element={<Panels/>}/>
+                                <Route path="/fireAlarm" element={<FireAlarm/>}/>
+                                <Route path="/ledLigths" element={<LedLights/>}/>
 
-                        {/* Creating routes for header dropdown menu */}
-                        <Route path="/chillers" element={<Chillers/>}/>
-                        <Route path="/aireAcondicionado" element={<AiresAcondicionados/>}/>
-                        <Route path="/unidadesCentrales" element={<UnidadesCentrales/>}/>
-                        <Route path="/fanCoil" element={<FanCOIL/>}/>
-                        <Route path="/ctrlAutomatización" element={<CrtlAutomatización/>}/>
-                        <Route path="/monitoreo" element={<MonitoreoH2O/>}/>
-                        <Route path="/circuitoTV" element={<TVcircuit/>}/>
-                        <Route path="/smokeControl" element={<SmokeControl/>}/>
-                        <Route path="/asistControl" element={<Asistance/>}/>
-                        <Route path="/paneles" element={<Panels/>}/>
-                        <Route path="/fireAlarm" element={<FireAlarm/>}/>
-                        <Route path="/ledLigths" element={<LedLights/>}/>
-
-                        {/*Routes for products page */}
-                        <Route path="/chillers/chillersAgua" element={<ChillersAgua/>}/>
-                        <Route path="/chillers/chillersAire" element={<ChillersAire/>}/>
-                        <Route path="/products/chillersAgua" element={<ChillersAgua/>}/>
-                        <Route path="/products/chillersAire" element={<ChillersAire/>}/>
-                        <Route path="/aireAcondicionado/aireComercial" element={<AireComercial/>}/>
-                        <Route path="/aireAcondicionado/VRF" element={<VRF/>}/>
-                        <Route path="/products/aireComercial" element={<AireComercial/>}/>
-                        <Route path="/products/VRF" element={<VRF/>}/>
-                        <Route path="/products/unidadesCentrales" element={<UnidadesCentrales/>}/>
-                        <Route path="/products/fanCoil" element={<FanCOIL/>}></Route>
-                        <Route path="/products/ctrlAutomatización/" element={<CrtlAutomatización/>}/>
-                        <Route path="/products/monitoreo" element={<MonitoreoH2O/>}/>
-                        <Route path="/products/circuitoTV" element={<TVcircuit/>}/>
-                        <Route path="/products/smokeControl" element={<SmokeControl/>}/>
-                        <Route path="/products/asistControl" element={<Asistance/>}/>
-                        <Route path="/products/paneles" element={<Panels/>}/>
-                        <Route path="/products/fireAlarm" element={<FireAlarm/>}/>
-                        <Route path="/products/ledLigths" element={<LedLights/>}/>
-                        
-                        {/*Routes for proyects page */}
-                        <Route path="/proyects/freund" element={<Freund/>}/>
-                        <Route path="/proyects/sherwin" element={<Sherwin/>}/>
-                        <Route path="/proyects/fosalud" element={<Fosalud/>}/>
-                        <Route path="/proyects/pgr" element={<Pgr/>}/>
-                        <Route path="/proyects/solaris" element={<Solaris/>}/>
-                        <Route path="/proyects/cepa" element={<Cepa/>}/>
-                        <Route path="/proyects/bancoLocal" element={<BancoLocal/>}/>
-                        <Route path="/proyects/laCentroAmericana" element={<LaCentroAmericana/>}/>
-                        <Route path="/proyects/fisdl" element={<Fisdl/>}/>
-                        <Route path="/proyects/ipsfa" element={<Ipsfa/>}/>
-                        <Route path="/proyects/avianca" element={<Avianca/>}/>
-                        <Route path="/proyects/omnisport" element={<Omnisport/>}/>
-                        </Routes>
-
-                    </main>
+                                {/*Routes for products page */}
+                                <Route path="/chillers/chillersAgua" element={<ChillersAgua/>}/>
+                                <Route path="/chillers/chillersAire" element={<ChillersAire/>}/>
+                                <Route path="/products/chillersAgua" element={<ChillersAgua/>}/>
+                                <Route path="/products/chillersAire" element={<ChillersAire/>}/>
+                                <Route path="/aireAcondicionado/aireComercial" element={<AireComercial/>}/>
+                                <Route path="/aireAcondicionado/VRF" element={<VRF/>}/>
+                                <Route path="/products/aireComercial" element={<AireComercial/>}/>
+                                <Route path="/products/VRF" element={<VRF/>}/>
+                                <Route path="/products/unidadesCentrales" element={<UnidadesCentrales/>}/>
+                                <Route path="/products/fanCoil" element={<FanCOIL/>}></Route>
+                                <Route path="/products/ctrlAutomatización/" element={<CrtlAutomatización/>}/>
+                                <Route path="/products/monitoreo" element={<MonitoreoH2O/>}/>
+                                <Route path="/products/circuitoTV" element={<TVcircuit/>}/>
+                                <Route path="/products/smokeControl" element={<SmokeControl/>}/>
+                                <Route path="/products/asistControl" element={<Asistance/>}/>
+                                <Route path="/products/paneles" element={<Panels/>}/>
+                                <Route path="/products/fireAlarm" element={<FireAlarm/>}/>
+                                <Route path="/products/ledLigths" element={<LedLights/>}/>
+                                
+                                {/*Routes for proyects page */}
+                                <Route path="/proyects/freund" element={<Freund/>}/>
+                                <Route path="/proyects/sherwin" element={<Sherwin/>}/>
+                                <Route path="/proyects/fosalud" element={<Fosalud/>}/>
+                                <Route path="/proyects/pgr" element={<Pgr/>}/>
+                                <Route path="/proyects/solaris" element={<Solaris/>}/>
+                                <Route path="/proyects/cepa" element={<Cepa/>}/>
+                                <Route path="/proyects/bancoLocal" element={<BancoLocal/>}/>
+                                <Route path="/proyects/laCentroAmericana" element={<LaCentroAmericana/>}/>
+                                <Route path="/proyects/fisdl" element={<Fisdl/>}/>
+                                <Route path="/proyects/ipsfa" element={<Ipsfa/>}/>
+                                <Route path="/proyects/avianca" element={<Avianca/>}/>
+                                <Route path="/proyects/omnisport" element={<Omnisport/>}/>
+                            </Routes>
+                        </main>
+                        <Footer/>
+                    </div>
                 </div>
-                <Footer/>
             </div>
-
+        </div>
         </>
-
     );
 }
 export default App;

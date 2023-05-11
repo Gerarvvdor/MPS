@@ -8,15 +8,14 @@ import CarouselSlide from "../components/carousel";
 const AboutUs = () => {
   return (
     <>
-    <div class="container">
+    <div class="container" >
       <div class="row">
+      <h1 class="text-center">ACERCA DE NOSOTROS</h1>
         <div class="col-md">
           <CarouselSlide />
         </div>
         <div class="col-md">
           <div>
-            <h1 class="text-center">ACERCA DE NOSOTROS</h1>
-
             <p class="text-justify">
               Somos una empresa dedicada al montaje de equipo electromecánico
               con especialidad en aire acondicionado, refrigeración y
@@ -54,43 +53,52 @@ const AboutUs = () => {
             aria-hidden="true">
 
             <div class="modal-dialog">
-                <div class="modal-content" style={{backgroundColor: 'var(--primary-color)'}}>
-                    <div class="modal-header">
-                    <img src={header} alt="ACERCA DE NOSOTROS" class="img-fluid" />
+                <div class="modal-content" style={{backgroundColor: 'var(--tertiary-color)'}}>
+                  <div class="modal-header">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <img src={header} alt="ACERCA DE NOSOTROS" class="img-fluid" />
+                        </div>
+                        <div class="col-auto">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                     <div class="modal-body">
-                    <p class="text-justify">
-                    MP SERVICE surge principalmente como una empresa dedicada al
-                    servicio de mantenimiento en edificios e industria,
-                    específicamente en equipos de aire acondicionado; así como al
-                    suministro e instalación de estos sistemas. En su evolución y
-                    con una filosofía orientada a disminuir los gastos operativos
-                    de las empresas a las que damos servicio, damos un salto
-                    tecnológico importante al ofrecer a nuestros clientes sistemas
-                    de automatización y control de los equipos de aire
-                    acondicionado, iluminación, sistemas de bombeo, calderas etc.
-                    con tecnología de última generación, con personal calificado y
-                    entrenado en Estados Unidos y Canadá.
-                    </p>
-                    <p class="text-justify">
-                    Esto nos permite ahora ofrecer no solo un servicio de
-                    mantenimiento, sino una gama de productos y servicios,
-                    orientados a satisfacer multitud de necesidades en las
-                    empresas: Servicios de Mantenimiento, Automatización y Control,
-                    Auditorias y Asesorías Energéticas, Auditorias y Asesorías
-                    Operativas, CCTV, Control de Acceso, Alarmas Contra Incendios,
-                    etc.
-                    </p>
+                      <p class="text-justify">
+                      MP SERVICE surge principalmente como una empresa dedicada al
+                      servicio de mantenimiento en edificios e industria,
+                      específicamente en equipos de aire acondicionado; así como al
+                      suministro e instalación de estos sistemas. En su evolución y
+                      con una filosofía orientada a disminuir los gastos operativos
+                      de las empresas a las que damos servicio, damos un salto
+                      tecnológico importante al ofrecer a nuestros clientes sistemas
+                      de automatización y control de los equipos de aire
+                      acondicionado, iluminación, sistemas de bombeo, calderas etc.
+                      con tecnología de última generación, con personal calificado y
+                      entrenado en Estados Unidos y Canadá.
+                      </p>
+                      <p class="text-justify">
+                      Esto nos permite ahora ofrecer no solo un servicio de
+                      mantenimiento, sino una gama de productos y servicios,
+                      orientados a satisfacer multitud de necesidades en las
+                      empresas: Servicios de Mantenimiento, Automatización y Control,
+                      Auditorias y Asesorías Energéticas, Auditorias y Asesorías
+                      Operativas, CCTV, Control de Acceso, Alarmas Contra Incendios,
+                      etc.
+                      </p>
                     </div>
                     <div class="modal-footer">
-                    <button
-                        type="button"
-                        class="btn"
-                        style={{backgroundColor: 'var(--quaternary-color)'}}
-                        data-bs-dismiss="modal">
-                    Cerrar
-                    </button>
-                    </div>
+                      <button
+                          type="button"
+                          class="btn"
+                          style={{backgroundColor: 'var(--quaternary-color)'}}
+                          data-bs-dismiss="modal">
+                      Cerrar
+                      </button>
+                      </div>
                 </div>
             </div>
         </div>

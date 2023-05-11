@@ -10,9 +10,9 @@ const freund = () => {
     return(
         <>
         <div style={{margin: '2rem'}}>
-            <div style={{  borderRadius: '0.5rem', margin: '1rem', borderRadius: '2rem'}}>
-                <h2 style={{ margin: '1rem' }}>FREUND Lourdes Colón</h2>
-                <p style={{ margin: '2rem' }}>
+            <div class="row" style={{  borderRadius: '2rem', margin: '1rem'}}>
+                <h2 style={{ margin: '0.5rem' }}>FREUND Lourdes Colón</h2>
+                <p style={{ margin: '1rem' }}>
                 Suministro e instalación de sistema de aire acondicionado 
                 compuesto por un chiller tipo scroll de 125 
                 toneladas de refrigeración marca YORK, tubería de distribución, 
@@ -30,10 +30,11 @@ const freund = () => {
                 el sistema en interfaces graficas a través de un servidor web.
                 </p>   
             </div>
+            <hr/>
             <div class="row" style={{  borderRadius: '2rem', margin: '1rem'}}>
                 <div class="col-md-6">
                     <h2 style={{ margin: '0.5rem' }}>FREUND San Miguel Centro</h2>
-                    <p>
+                    <p style={{ margin: '1rem' }}>
                     Se reconstruye y amplía la Tienda FREUND San Miguel Centro, 
                     instalando 120 Toneladas de Refrigeración, con sistemas 
                     separados de expansión directa, y un sistema de 
@@ -44,10 +45,11 @@ const freund = () => {
                     <img src={freundSMC} class="img-fluid" alt="Freund San Miguel"  style={{margin: '0.5rem'}}/>
                 </div>
             </div>
-            <div class="row" style={{ borderRadius: '2rem', margin: '1rem'}}>
+            <hr/>
+            <div class="row" style={{  borderRadius: '2rem', margin: '1rem'}}>
                 <div class="col-md-6">
-                    <h2 style={{margin: '0.5rem'}}>FREUND Merliot</h2>
-                    <p>
+                    <h2 style={{ margin: '0.5rem' }}>FREUND Merliot</h2>
+                    <p style={{ margin: '1rem' }}>
                     Se remodela y amplía la Tienda FREUND Merliot, 
                     instalando capacidad adicional, llegando a 90 
                     Toneladas de Refrigeración, todo con sistemas 
@@ -59,12 +61,11 @@ const freund = () => {
                     <img src={freundMerliot} class="img-fluid" alt="Freund Merliot" style={{margin: '0.5rem'}}/>
                 </div>
             </div>
-
-
-            <div class="row" style={{ borderRadius: '2rem', margin: '1rem'}}>
+            <hr/>
+            <div div class="row" style={{  borderRadius: '2rem', margin: '1rem'}}>
                 <div class="col-md-6">
-                    <h2 style={{margin: '0.5rem'}}>FREUND Escalón</h2>
-                    <p>
+                    <h2 style={{ margin: '0.5rem' }}>FREUND Escalón</h2>
+                    <p style={{ margin: '1rem' }}>
                     Se remodela y amplía la Tienda FREUND Escalón, 
                     instalando capacidad adicional, llegando a 125 
                     Toneladas de Refrigeración, en un sistema mixto 
@@ -77,10 +78,11 @@ const freund = () => {
                     <img src={freundEscalon} class="img-fluid" alt="Freund escalón" style={{margin: '0.5rem'}}/>
                 </div>
             </div>
-            <div class="row" style={{ borderRadius: '2rem', margin: '1rem'}}>
-                <div class="col-md-6">
-                    <h2 style={{margin: '0.5rem'}}>FREUND Sonsonate</h2>
-                    <p class="col">
+            <hr/>
+            <div class="row" style={{  borderRadius: '2rem', margin: '1rem'}} >
+                <div class="col-md-6" >
+                    <h2 style={{ margin: '0.5rem' }} >FREUND Sonsonate</h2>
+                    <p style={{ margin: '1rem' }} >
                     Es una instalación completamente nueva, equipamiento 
                     de equipos de aire acondicionado y ventilación mecánica, 
                     sistema de control y automatización, un chiller scroll de 
@@ -92,9 +94,10 @@ const freund = () => {
                     <img src={freundSonso} class="img-fluid" alt="Freund Sonsonate" style={{margin: '0.5rem'}}/>
                 </div>
             </div>
+            <hr/>
             <div class="text-center" style={{ borderRadius: '2rem'}}>
                 <h2 style={{margin: '0.5rem'}}>FREUND Sistemas</h2>
-                <p class="col">
+                <p>
                 Implementación de control inteligente para 5 equipos de 
                 aire acondicionado que sirven en el DATA CENTER.
                 </p>

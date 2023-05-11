@@ -14,10 +14,6 @@ const FanCOIL = () => {
               <img src={fain_COIL} class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">CFM: 250 to 1,200 CFM</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
                 <a href="#" class="btn btn-primary">
                   Más detalles
                 </a>
@@ -29,10 +25,6 @@ const FanCOIL = () => {
               <img src={CFM} class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">CFM: 600 to 2,000 CFM</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
                 <a href="#" class="btn btn-primary">
                   Más detalles
                 </a>
@@ -44,11 +36,7 @@ const FanCOIL = () => {
               <img src={YDFC} class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">YDFC</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">
+                <a href="https://www.johnsoncontrols.com/en_au/-/media/jci/be/australia/air-systems/fan-coil-units/files/be_productcatalog_ydfc_highstaticfancoilunits.pdf?la=en" target="_blank" rel="noreferrer" class="btn btn-primary">
                   Más detalles
                 </a>
               </div>

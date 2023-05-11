@@ -17,6 +17,13 @@ const LedLights = () => {
         <div class="row">
           <div class="col-md-6">
             <img class="img-fluid" src={urban} alt="Urban" />
+            <h5>URBANO LED
+              <hr/>
+              URBINO LED
+            </h5>
+            <a href="#" class="btn btn-primary">
+                  Más detalles
+                </a>
           </div>
           <div class="col-md-6">
             <img class="img-fluid" src={ledLights} alt="LED Lights" />

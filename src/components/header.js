@@ -2,16 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../images/logo.avif';
 import lead from './../images/lead.avif';
-import reliable from './../images/reliablec.avif';
-import leed from './../images/hearth.avif';
+import reliable from './../images/Reliable controls Authorized Dealer.webp';
+import leed from './../images/LEED+Earth.webp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/custom-colors.css';
+import '../style/header.css';
 
 const Header = () => {
   return (
     <>
-    <div style={{ backgroundColor: 'var(--tertiary-color)' }} >
-      <div class="container">
+    <div>
+      <img class="img-fluid" style={{ maxWidth: '5%', height: 'auto', margin: '10px' }} src={logo} alt="MP Logo"/>
+      <img class="img-fluid" style={{ maxWidth: '7%', height: 'auto', margin: '10px' }} src={lead} alt="leed"/>
+      <img class="img-fluid" style={{ maxWidth: '10%', height: 'auto', margin: '10px' }} src={leed} alt="leed Earth"/>
+      <img class="img-fluid" style={{ maxWidth: '15%', height: 'auto', margin: '10px' }} src={reliable} alt='reliable-logo'/>
+    </div>
+    {/* 
+    <div class="header" style={{ backgroundColor: 'var(--secondary-color)', marginBottom: '1rem' }} >
 
         {/*<div className='socialMedia'class="container">
             <div className="container-fluid text-center">
@@ -30,32 +37,31 @@ const Header = () => {
                 </a>
               </div>
             </div>
-          </div>*/}
-        <div class="img-container">
+          </div>}
+        <div class="text-center">
             <img class="img-fluid" style={{ maxWidth: '5%', height: 'auto', margin: '10px' }} src={logo} alt="MP Logo"/>
             <img class="img-fluid" style={{ maxWidth: '6%', height: 'auto', margin: '10px' }} src={lead} alt="leed"/>
             <img class="img-fluid" style={{ maxWidth: '10%', height: 'auto', margin: '10px' }} src={leed} alt="leed Earth"/>
             <img class="img-fluid" style={{ maxWidth: '15%', height: 'auto', margin: '10px' }} src={reliable} alt='reliable-logo'/>
         </div>
-        </div>
-        <nav class="navbar navbar-expand-lg" style={{margin: '10px'}}>
+        <nav class="navbar navbar-expand-lg navbar-light m-auto" style={{marginBottom: '10px'}}>
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style={{color: 'var(--fift-color )'}}>
+              <span class="navbar-icon"><i class="bi bi-list" style={{color: 'var(--fift-color )', width: 'auto', height: 'auto'}}/></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item me-lg-2 me-3">
-                    <a href='...' class="nav-link active" aria-current="page"><Link to="/" style={{ textDecoration: 'none', color: 'var(--primary-color)' }}>INICIO</Link></a>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 display-flex">
+                <li class="nav-item me-lg-2 me-3 justify-content-center">
+                  <Link to="/" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center">INICIO</Link>
                   </li>
-                <li class="nav-item me-lg-2 me-3">
-                  <a href="..." class="nav-link active" aria-current="page"><Link to="aboutUs" style={{ textDecoration: 'none', color: 'var(--primary-color)' }}>NOSOTROS</Link></a>
+                <li class="nav-item me-lg-2 me-3 justify-content-center">
+                  <Link to="aboutUs" style={{ textDecoration: 'none', color: 'var(--fift-color)' }}>NOSOTROS</Link>
                 </li>
-                <li class="nav-item dropdown me-lg-2 me-3">
-                  <a href="..." class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{color: 'var(--primary-color)'}}>
+                <li class="nav-item dropdown me-lg-2 me-3 justify-content-center">
+                  <div class=" dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{color: 'var(--fift-color)'}}>
                     PRODUCTOS
-                  </a>
-                  <ul class="dropdown-menu me-lg-2 me-3" style={{backgroundColor: 'var(--primary-color)'}}>
+                  </div>
+                  <ul class="dropdown-menu me-lg-2 me-3" style={{backgroundColor: 'var(--secondary-color)'}}>
                     <Link to="chillers" style={{textDecoration: 'none', color: 'black'}} ><li><a href="..." class="dropdown-item">Chillers</a></li></Link>
                     <Link to="aireAcondicionado" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Aires Acondicionados</a></li></Link>
                     <Link to="unidadesCentrales" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Unidades centrales</a></li></Link>
@@ -72,29 +78,31 @@ const Header = () => {
                     <Link to="products" style={{ textDecoration: 'none', color: 'black' }}><li><a href="..." class="dropdown-item">Ver todos los productos</a></li></Link>
                   </ul>
                 </li>
-                <li class="nav-item me-lg-2 me-3">
-                  <a href="..." class="nav-link active" aria-current="page"><Link to="services" style={{ textDecoration: 'none', color: 'var(--primary-color)' }}>SERVICIOS</Link></a>
+                <li class="nav-item me-lg-2 me-3 justify-content-center">
+                  <Link to="services" style={{ textDecoration: 'none', color: 'var(--fift-color)' }}>SERVICIOS</Link>
+                </li>
+                <li class="nav-item me-lg-2 me-3 justify-content-center">
+                  <Link to="proyects" style={{ textDecoration: 'none', color: 'var(--fift-color)' }}>PROYECTOS</Link>
+                </li>
+                <li class="nav-item me-lg-2 me-3 justify-content-center">
+                  <Link to="renewable" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center">ENERGIAS RENOVABLES</Link>
+                </li>
+                <li class="nav-item me-lg-2 me-3 justify-content-center">
+                  <Link to="brands" style={{ textDecoration: 'none', color: 'var(--fift-color)' }}>MARCAS</Link>
                 </li>
                 <li class="nav-item me-lg-2 me-3">
-                  <a href="..." class="nav-link active" aria-current="page"><Link to="proyects" style={{ textDecoration: 'none', color: 'var(--primary-color)' }}>PROYECTOS</Link></a>
+                  <Link to="contacts" style={{ textDecoration: 'none', color: 'var(--fift-color)' }}>CONTACTOS</Link>
                 </li>
-                <li class="nav-item me-lg-2 me-3">
-                  <a href="#" class="nav-link active" aria-current="page"><Link to="renewable" style={{ textDecoration: 'none', color: 'var(--primary-color)' }}>ENERGIAS RENOVABLES</Link></a>
-                </li>
-                <li class="nav-item me-lg-2 me-3">
-                  <a href="..." class="nav-link active" aria-current="page"><Link to="brands" style={{ textDecoration: 'none', color: 'var(--primary-color)' }}>MARCAS</Link></a>
-                </li>
-                <li class="nav-item me-lg-2 me-3">
-                  <a href="..." class="nav-link active" aria-current="page"><Link to="contacts" style={{ textDecoration: 'none', color: 'var(--primary-color)' }}>CONTACTOS</Link></a>
-                </li>
-                <li class="nav-item me-lg-2 me-3">
-                  <a href="..." class="nav-link active" aria-current="page"><Link to="autoControl" style={{ textDecoration: 'none', color: 'var(--primary-color)' }}>CONTROL Y AUTOMATIZACIÓN</Link></a>
+                <li class="nav-item me-lg-2 me-3 justify-content-center">
+                  <Link to="autoControl" style={{ textDecoration: 'none', color: 'var(--fift-color)' }}>CONTROL Y AUTOMATIZACIÓN</Link>
                 </li>
               </ul>
             </div>  
           </div>
         </nav>
-      </div>
+      </div>*/}
+      
+      
     </>
   );
 
