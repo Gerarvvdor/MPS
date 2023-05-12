@@ -1,11 +1,16 @@
-import React, {useState} from "react";
+import React from "react";
 
 //components//
 import Header from "./components/header";
 import Footer from "./components/footer";
 
+//stylesheet//
+import './style/sideMenu.css'
+import './style/custom-colors.css'
+
 //reactDOM//
 import {Link, Routes, Route} from "react-router-dom";
+
 //pages//
 import HomePage from "./paginas/Inicio";
 import AboutUs from "./paginas/aboutUs";
@@ -17,7 +22,6 @@ import Brands from "./paginas/brands";
 import Contacts from "./paginas/contacts";
 import AutoControl from "./paginas/autoControl";
 
-//sub pagess imports//
 //products pages//
 import Chillers from "./paginas/chillers";
 import ChillersAgua from "./paginas/chillersAgua";
@@ -59,54 +63,43 @@ const App = () => {
                     <div class="col-sm-auto bg-light sticky-top">
                         <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
                             <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
-                                <li>
-                                    <Link to="/" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-                                        <i class="bi-house fs-1"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <div class="dropend">
-                                        <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="bi bi-basket fs-1"></i>
-                                        </a>
-                                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
-                                            <Link to="chillers" style={{textDecoration: 'none', color: 'black'}} ><li><a href="..." class="dropdown-item">Chillers</a></li></Link>
-                                            <Link to="aireAcondicionado" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Aires Acondicionados</a></li></Link>
-                                            <Link to="unidadesCentrales" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Unidades centrales</a></li></Link>
-                                            <Link to="fanCoil" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Fan COIL de agua fría</a></li></Link>
-                                            <Link to="ctrlAutomatización" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Control y Automatización</a></li></Link>
-                                            <Link to="monitoreo" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Monitoreo de agua y energía</a></li></Link>
-                                            <Link to="circuitoTV" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Circuito derrado de TV</a></li></Link>
-                                            <Link to="smokeControl" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Smoke Control</a></li></Link>
-                                            <Link to="asistControl" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Control de asistencia</a></li></Link>
-                                            <Link to="paneles" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Paneles fotovoltáicos</a></li></Link>
-                                            <Link to="fireAlarm" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Alarma contra incendios</a></li></Link>
-                                            <Link to="ledLigths" style={{textDecoration: 'none', color: 'black'}}><li><a href="..." class="dropdown-item">Instalación de iluminación LED</a></li></Link>
-                                            <li><hr class="dropdown-divider"/></li>
-                                            <Link to="products" style={{ textDecoration: 'none', color: 'black' }}><li><a href="..." class="dropdown-item">Ver todos los productos</a></li></Link>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <Link to="proyects" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
-                                        <i class="bi bi-clipboard fs-1"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="renewable" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
-                                        <i class="bi bi-lightning-charge fs-1"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="brands" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
-                                        <i class="bi bi-tag fs-1"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="autoControl" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
-                                        <i class="bi bi-gear-wide-connected fs-1"></i>
-                                    </Link>
-                                </li>
+                                <Link to="/" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                                    <li>                     
+                                            <span class="icon"><i class="bi-house fs-1" id="homeButton"></i></span>
+                                            <span class="titulo">Inicio</span>
+                                    </li>                                    
+                                </Link>
+                                <Link to="products" id="brandsButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                    <li>
+                                        <span class="icon"><i class="bi bi-tag fs-1"></i></span>
+                                        <span class="titulo">Products</span>
+                                    </li>
+                                </Link>
+                                
+                                <Link to="proyects" id="proyectsButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                    <li>
+                                        <span class="icon"><i class="bi bi-clipboard fs-1"></i></span>
+                                        <span class="titulo">Proyectos</span>
+                                    </li>
+                                </Link>
+                                <Link to="renewable" id="renewableEnergyButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                    <li>    
+                                        <span class="icon"><i class="bi bi-lightning-charge fs-1"></i></span>
+                                        <span class="titulo">Energías renovables</span>
+                                    </li>
+                                </Link>
+                                <Link to="brands" id="brandsButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                    <li>    
+                                        <span class="icon"><i class="bi bi-tag fs-1"></i></span>
+                                        <span class="titulo">Marcas</span>
+                                    </li>
+                                </Link>
+                                <Link to="autoControl" id="autoControlButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                    <li>    
+                                        <span class="icon"><i class="bi bi-gear-wide-connected fs-1"></i></span>
+                                        <span class="titulo">Automatización y control</span>    
+                                    </li>
+                                </Link>
                             </ul>
                         </div>
                     </div>

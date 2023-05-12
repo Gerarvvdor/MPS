@@ -36,7 +36,7 @@ const AboutUs = () => {
           <button
             type="button"
             class="btn"
-            style={{backgroundColor: 'var(--secondary-color)'}}
+            style={{backgroundColor: 'var(--primary-color)'}}
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
@@ -53,7 +53,7 @@ const AboutUs = () => {
             aria-hidden="true">
 
             <div class="modal-dialog">
-                <div class="modal-content" style={{backgroundColor: 'var(--tertiary-color)'}}>
+                <div class="modal-content" style={{backgroundColor: 'var(--secondary-color)'}}>
                   <div class="modal-header">
                     <div class="container">
                       <div class="row">
@@ -94,7 +94,7 @@ const AboutUs = () => {
                       <button
                           type="button"
                           class="btn"
-                          style={{backgroundColor: 'var(--quaternary-color)'}}
+                          style={{backgroundColor: 'var(--primary-color)'}}
                           data-bs-dismiss="modal">
                       Cerrar
                       </button>
@@ -139,13 +139,15 @@ const AboutUs = () => {
                                 <i class="bi bi-gem" style={{ fontSize: '4rem' }}></i>
                                 </div>
                                 <h4 class="card-title text-center">Valores</h4>
-                                <ul class="list-unstyled">
-                                <li>Calidad</li>
-                                <li>Compromiso</li>
-                                <li>Seguridad</li>
-                                <li>Confianza</li>
-                                <li>Innovación</li>
-                                </ul>
+                                <div class="container" style={{}}>
+                                  <li className="valores-li">Calidad</li>
+                                  <li className="valores">Compromiso</li>
+                                  <li className="valores">Seguridad</li>
+                                  <li className="valores">Confianza</li>
+                                  <li >Innovación</li>
+                                </div>
+                                  
+                                
                             </div>
                         </div>
                     </div>

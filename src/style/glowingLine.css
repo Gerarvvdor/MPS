@@ -1,0 +1,20 @@
+@import './custom-colors.css';
+.neon-line {
+    border: none;
+    height: 4px;
+    background-color: black;
+    opacity: 0.5;
+    filter: blur(1px);
+    
+    animation: neon 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neon {
+    from {
+      box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--sixt-color), 0 0 30px var(--tertiary-color), 0 0 40px var(--quaternary-color);
+    }
+    to {
+      box-shadow: 0 0 20px var(--sixt-color), 0 0 30px var(--tertiary-color), 0 0 40px var(--secondary-color), 0 0 50px var(--primary-color);
+    }   
+  }
+  

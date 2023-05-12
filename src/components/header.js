@@ -6,12 +6,13 @@ import reliable from './../images/Reliable controls Authorized Dealer.webp';
 import leed from './../images/LEED+Earth.webp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/custom-colors.css';
-import '../style/header.css';
+
+
 
 const Header = () => {
   return (
     <>
-    <div>
+    <div class="navbar-fixed-top" style={{background: 'var(--tertiary-color)', borderRadius: '0.5rem'}}>
       <img class="img-fluid" style={{ maxWidth: '5%', height: 'auto', margin: '10px' }} src={logo} alt="MP Logo"/>
       <img class="img-fluid" style={{ maxWidth: '7%', height: 'auto', margin: '10px' }} src={lead} alt="leed"/>
       <img class="img-fluid" style={{ maxWidth: '10%', height: 'auto', margin: '10px' }} src={leed} alt="leed Earth"/>

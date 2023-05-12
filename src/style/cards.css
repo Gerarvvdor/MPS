@@ -9,3 +9,7 @@
     margin: 5px;
     border-radius: 15px;
 }
+
+.card :hover{
+    transform: scale(1.03);
+}
