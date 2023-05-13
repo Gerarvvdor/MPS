@@ -102,12 +102,12 @@ const AboutUs = () => {
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style={{margin: '1rem'}}>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
+                <div>
+                    <div class="text-center">
                         <i class="bi bi-bullseye" style={{ fontSize: '4rem' }}></i>
-                        <h4 class="card-title">Misión</h4>
+                        <h4>Misión</h4>
                         <p>
                         Realizar suministros y montajes de equipos electromecánicos y
                         electrónicos, en especial equipos de aire acondicionado, sistemas de
@@ -119,10 +119,10 @@ const AboutUs = () => {
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-body text-center">
+                <div>
+                    <div class="text-center">
                         <i class="bi bi-eye" style={{ fontSize: '4rem' }}></i>
-                         <h4 class="card-title text-center">Visión</h4>
+                         <h4 class="text-center">Visión</h4>
                         <p>
                         Ser una empresa de referencia, dando a nuestros clientes altos
                         estándares en instalaciones y servicios, buscando un bajo impacto
@@ -133,13 +133,13 @@ const AboutUs = () => {
                         </div>
                     </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
+                    <div>
                         <div class="card-body">
-                            <div class="text-center">
+                            <div>
                                 <i class="bi bi-gem" style={{ fontSize: '4rem' }}></i>
                                 </div>
-                                <h4 class="card-title text-center">Valores</h4>
-                                <div class="container" style={{}}>
+                                <h4 class="">Valores</h4>
+                                <div class="container text-start" style={{}}>
                                   <li className="valores-li">Calidad</li>
                                   <li className="valores">Compromiso</li>
                                   <li className="valores">Seguridad</li>
