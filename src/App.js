@@ -4,9 +4,14 @@ import React from "react";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
+
 //stylesheet//
 import './style/sideMenu.css'
 import './style/custom-colors.css'
+import './style/socialMedia.css'
+import './style/floatingButton.css'
+
+
 
 //reactDOM//
 import {Link, Routes, Route} from "react-router-dom";
@@ -53,10 +58,14 @@ import Ipsfa from "./paginas/ipsfa";
 import Avianca from "./paginas/avianca";
 import Omnisport from "./paginas/omnisport";
 
+//Import images//
+
+
 const App = () => {
 
     return (
         <>
+
         <div class="conainer">
             <div class="container-fluid">
                 <div class="row">
@@ -64,48 +73,48 @@ const App = () => {
                         <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
                             <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
                                 <Link to="/" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-                                    <li>                     
+                                     <li style={{ '--i': 'var(--primary-color)', '--j': 'var(--tertiary-color)' }}>                     
                                             <span class="icon"><i class="bi-house fs-1" id="homeButton"></i></span>
                                             <span class="titulo">Inicio</span>
                                     </li>                                    
                                 </Link>
                                 <Link to="products" id="brandsButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
-                                    <li>
-                                        <span class="icon"><i class="bi bi-tag fs-1"></i></span>
-                                        <span class="titulo">Products</span>
+                                    <li style={{ '--i': 'var(--sixt-color)', '--j': '#f434e2' }}>
+                                        <span class="icon"><i class="bi bi-basket fs-1"></i></span>
+                                        <span class="titulo">Productos</span>
                                     </li>
                                 </Link>
                                 
                                 <Link to="proyects" id="proyectsButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
-                                    <li>
+                                    <li style={{ '--i': '#A300F4', '--j': '#01FEDD' }}>
                                         <span class="icon"><i class="bi bi-clipboard fs-1"></i></span>
                                         <span class="titulo">Proyectos</span>
                                     </li>
                                 </Link>
-                                <Link to="renewable" id="renewableEnergyButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
-                                    <li>    
+                                {/*<Link to="renewable" id="renewableEnergyButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                    <li style={{ '--i': '#ffa9e6', '--j': '#f434e2' }}>    
                                         <span class="icon"><i class="bi bi-lightning-charge fs-1"></i></span>
                                         <span class="titulo">Energías renovables</span>
                                     </li>
-                                </Link>
+    </Link>*/}
                                 <Link to="brands" id="brandsButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
-                                    <li>    
+                                    <li style={{ '--i': '#FF9542', '--j': '#f434e2' }}>    
                                         <span class="icon"><i class="bi bi-tag fs-1"></i></span>
                                         <span class="titulo">Marcas</span>
                                     </li>
                                 </Link>
-                                <Link to="autoControl" id="autoControlButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
-                                    <li>    
+                                {/*<Link to="autoControl" id="autoControlButton" style={{ textDecoration: 'none', color: 'var(--fift-color)' }} class="text-center d-block p-1 link-dark text-decoration-none">
+                                    <li style={{ '--i': '#ffa9e6', '--j': '#f434e2' }}>    
                                         <span class="icon"><i class="bi bi-gear-wide-connected fs-1"></i></span>
                                         <span class="titulo">Automatización y control</span>    
                                     </li>
-                                </Link>
+    </Link>*/}
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm p-3 min-vh-100">
+                    <Header/>
                         <main>
-                        <Header/>
                             <Routes>
                                 <Route path="/" element={<HomePage/>}/>
                                 <Route path="/aboutUs" element={<AboutUs/>}/>
@@ -165,6 +174,74 @@ const App = () => {
                                 <Route path="/proyects/avianca" element={<Avianca/>}/>
                                 <Route path="/proyects/omnisport" element={<Omnisport/>}/>
                             </Routes>
+                            <div class="floating-buttons">
+                                <ul class="list-unstyled">
+                                    <li style={{ '--i': '#a955ff', '--j': '#ea51ff' }}>
+                                        <span class="icon"><i class="bi bi-facebook"></i></span>
+                                        <span class="titulo">
+                                            <a  href='https://www.facebook.com/profile.php?id=100063475033565' 
+                                                target='_blank' 
+                                                rel="noreferrer" 
+                                                class='me-3 text-cente jutify-content-centerr' 
+                                                style={{textDecoration: 'none', color: 'black'}}>
+                                                Facebook
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li style={{ '--i': '#FF0000', '--j': '#000000' }}>
+                                        <span class="icon"><i class="bi bi-youtube"></i></span>
+                                        <span class="titulo">
+                                            <a  href='https://www.youtube.com/channel/UC8Pm_a_1mfNMEsJuf66P56w?view_as=subscriber' 
+                                                target='_blank' 
+                                                rel="noreferrer" 
+                                                class='me-3 text-cente jutify-content-centerr' 
+                                                style={{textDecoration: 'none', color: 'black'}}>
+                                            Youtube
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li style={{ '--i': '#ffa9e6', '--j': '#f434e2' }}>
+                                        <span class="icon"><i class="bi bi-instagram"></i></span>
+                                        <span class="titulo">
+                                            <a href='https://www.instagram.com/mp_service_/' 
+                                                target='_blank' 
+                                                rel="noreferrer" 
+                                                class='me-3 text-cente jutify-content-centerr' 
+                                                style={{textDecoration: 'none', color: 'black'}}>
+                                            Instagram
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li style={{ '--i': '#56eef2', '--j': '#2e80ed' }}>
+                                        <span class="icon"><i class="bi bi-twitter"></i></span>
+                                        <span class="titulo"><a href='https://twitter.com/MPSservice' target='_blank' rel="noreferrer" class='me-3 text-cente jutify-content-centerr' style={{textDecoration: 'none', color: 'black'}}>Twitter</a></span>
+                                    </li>
+                                </ul>                            
+                            </div>
+
+                            {/*Floating Action Button like Google Material
+                            <div class="menu pmd-floating-action"  role="navigation"> 
+                                <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-light" data-title="Supervisor Account"> 
+                                    <span class="pmd-floating-hidden">Supervisor Account</span>
+                                    <i class="material-icons">supervisor_account</i>
+                                </a> 
+                                <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-light" data-title="Cloud Queue"> 
+                                    <span class="pmd-floating-hidden">Cloud Queue</span> 
+                                    <i class="material-icons">cloud_queue</i> 
+                                </a> 
+                                <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-light" data-title="Headset"> 
+                                    <span class="pmd-floating-hidden">Headset</span> 
+                                    <i class="material-icons">headset</i>
+                                </a> 
+                                <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-light" data-title="Dialpad"> 
+                                    <span class="pmd-floating-hidden">Dialpad</span> 
+                                    <i class="material-icons">dialpad</i> 
+                                </a> 
+                                <a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary" data-title="Add" href="javascript:void(0);"> 
+                                    <span class="pmd-floating-hidden">Primary</span>
+                                    <i class="material-icons pmd-sm">add</i> 
+                                </a> 
+                            </div>*/}
                         </main>
                         <Footer/>
                     </div>

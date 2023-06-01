@@ -1,0 +1,30 @@
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.floating-buttons ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.floating-buttons li {
+  display: flex;
+  align-items: center;
+}
+
+.floating-buttons a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.floating-buttons a i {
+  margin-right: 5px;
+}

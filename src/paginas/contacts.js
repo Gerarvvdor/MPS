@@ -6,9 +6,64 @@ const Contacts = () => {
       <div class="container">
         <div class="row">
           <h1 class="text-center">CONTACTOS</h1>
-          <h2>Dirección oficinas</h2>
-          <div class="col">
-            <h3>Colonia San Francisco #77, Calle los castaños</h3>
+          <h2 class="text-start">Dirección oficinas:</h2>
+          <div class="col align-items-center text-start justify-items-center">
+            <h3>Colonia San Francisco #77, Calle los Castaños</h3>
+            <p>Teléfono: +503 2247-3400</p>
+            <p>E-mail: info@mpservice.com.sv</p>
+            <ul class="list-unstyled">
+              <li style={{ '--i': '#a955ff', '--j': '#ea51ff' }}>
+                  <span class="icon"><i class="bi bi-facebook"></i></span>
+                  <span class="titulo">
+                    <a  href='https://www.facebook.com/profile.php?id=100063475033565' 
+                        target='_blank' 
+                        rel="noreferrer" 
+                        class='me-3 text-cente jutify-content-centerr' 
+                        style={{textDecoration: 'none', color: 'black'}}>
+                          Facebook
+                    </a>
+                  </span>
+              </li>
+              <li style={{ '--i': '#FF0000', '--j': '#000000' }}>
+                  <span class="icon"><i class="bi bi-youtube"></i></span>
+                  <span class="titulo">
+                    <a  href='https://www.youtube.com/channel/UC8Pm_a_1mfNMEsJuf66P56w?view_as=subscriber' 
+                        target='_blank' 
+                        rel="noreferrer" 
+                        class='me-3 text-cente jutify-content-centerr' 
+                        style={{textDecoration: 'none', color: 'black'}}>
+                      Youtube
+                    </a>
+                </span>
+              </li>
+              <li style={{ '--i': '#ffa9e6', '--j': '#f434e2' }}>
+                  <span class="icon"><i class="bi bi-instagram"></i></span>
+                  <span class="titulo">
+                    <a href='https://www.instagram.com/mp_service_/' 
+                        target='_blank' 
+                        rel="noreferrer" 
+                        class='me-3 text-cente jutify-content-centerr' 
+                        style={{textDecoration: 'none', color: 'black'}}>
+                      Instagram
+                    </a>
+                  </span>
+              </li>
+              <li style={{ '--i': '#56eef2', '--j': '#2e80ed' }}>
+                  <span class="icon"><i class="bi bi-twitter"></i></span>
+                  <span class="titulo"><a href='https://twitter.com/MPSservice' target='_blank' rel="noreferrer" class='me-3 text-cente jutify-content-centerr' style={{textDecoration: 'none', color: 'black'}}>Twitter</a></span>
+              </li>
+              <li style={{ '--i': '#FF0000', '--j': '#01C3EB' }}>
+                  <span class="icon"><i class="bi bi-envelope-at"></i></span>
+                  <span class="titulo">
+                    <a  href="mailto:info@mpservice.com.sv" target='_blank' 
+                        rel="noreferrer" 
+                        class='me-3 text-cente jutify-content-centerr' 
+                        style={{textDecoration: 'none', color: 'black'}}>
+                          E-mail
+                    </a>
+                  </span>
+              </li>
+          </ul>
           </div>
           <div class="col">
             <div class="embed-responsive embed-responsive-16by9">
@@ -24,6 +79,7 @@ const Contacts = () => {
             </div>
           </div>
         </div>
+      
       </div>
     </>
   );

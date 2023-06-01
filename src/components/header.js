@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import logo from './../images/logo.avif';
 import lead from './../images/lead.avif';
 import reliable from './../images/Reliable controls Authorized Dealer.webp';
@@ -12,8 +11,9 @@ import '../style/custom-colors.css';
 const Header = () => {
   return (
     <>
-    <div class="navbar-fixed-top" style={{background: 'var(--tertiary-color)', borderRadius: '0.5rem'}}>
-      <img class="img-fluid" style={{ maxWidth: '5%', height: 'auto', margin: '10px' }} src={logo} alt="MP Logo"/>
+      
+    <div class="navbar-fixed-top text-center" style={{background: 'var(--tertiary-color)', borderRadius: '0.5rem'}}>
+      <img class="img-fluid" style={{ maxWidth: '5%', height: 'auto', margin: '10px' }} src={logo} alt='logo'></img>
       <img class="img-fluid" style={{ maxWidth: '7%', height: 'auto', margin: '10px' }} src={lead} alt="leed"/>
       <img class="img-fluid" style={{ maxWidth: '10%', height: 'auto', margin: '10px' }} src={leed} alt="leed Earth"/>
       <img class="img-fluid" style={{ maxWidth: '15%', height: 'auto', margin: '10px' }} src={reliable} alt='reliable-logo'/>

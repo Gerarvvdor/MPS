@@ -4,11 +4,11 @@ import "./../style/custom-colors.css"
 import freund from "../images/freund.avif";
 import sherwin from "../images/sherwin.avif";
 import fosalud from "../images/fosalud.avif";
-import pgr from "../images/pgr.avif";
+import pgr from "../images/PGR.webp";
 import solaris from "../images/solaris.avif";
 import cepa from "../images/cepa.avif";
 import bancoLocal from "../images/banco.avif";
-import centroAmericana from "../images/data.avif";
+import centroAmericana from "../images/laCentroAmericana.webp";
 import fisdl from "../images/fisdl.avif";
 import ipsfa from "../images/ipsfa.avif";
 import avianca from "../images/avianca.avif";
@@ -109,9 +109,9 @@ const Proyects = () => {
                 <div class="col-lg-4 col-md-6 mb-4">
                     <Link to="fisdl" style={{ textDecoration: 'none', color: 'black' }}>
                         <div class="card" style={{width: '18rem'}}>
-                            <img src={fisdl} alt="..." class="card-img-center"/>
+                            <img src="" alt="Vidri_card_image" class="card-img-center"/>
                                 <div class="card-body" style={{backgroundColor: 'var(--secondary-color)', borderEndStartRadius: '0.8rem',  borderEndEndRadius: '0.8rem'}}>
-                                    <p class="card-text">FISDL</p>
+                                    <p class="card-text">Vidri</p>
                                 </div>
                         </div>  
                     </Link>

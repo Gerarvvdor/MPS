@@ -1,0 +1,8 @@
+.header {
+    background: url(../images/gifRenewableEnergies.gif) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  /*.header .navbar {
+    background-color: transparent !important;
+  }*/
